@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invisible Sandwich Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+            background-image: radial-gradient(circle, #e6f3ff 2px, transparent 2px);
+            background-size: 30px 30px;
+        }
+        
+        .shop {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border: 3px solid #87ceeb;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(135, 206, 235, 0.3);
+        }
+        
+        h1 {
+            color: #4682b4;
+            text-align: center;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        
+        .menu-item {
+            border: 2px dashed #87ceeb;
+            margin: 15px 0;
+            padding: 15px;
+            background: #f8f8ff;
+        }
+        
+        .price {
+            float: right;
+            font-weight: bold;
+            color: #4682b4;
+        }
+        
+        .invisible {
+            opacity: 0.1;
+            transition: opacity 0.3s;
+        }
+        
+        .invisible:hover {
+            opacity: 1;
+        }
+        
+        .warning {
+            background: #ffe4e1;
+            padding: 10px;
+            border-left: 4px solid #ff6b6b;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shop">
+        <h1>Invisible Sandwich Shop</h1>
+        <p class="subtitle">"You can't see it, but you can taste the nothing!"</p>
+        <img style="margin-left: 100px;" src="https://th.bing.com/th/id/OIP.3W1zCq_-gebj39x1Z2P9uAHaE7?w=261&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="">
+        <div class="menu-item">
+            <strong>The Disappearing Deluxe</strong>
+            <span class="price">$12.99</span>
+            <br>Made with invisible bread, transparent turkey, and see-through cheese
+        </div>
+
+        <div class="menu-item invisible">
+            <strong>The Phantom Philly</strong>
+            <span class="price">$11.50</span>
+            <br>Invisible steak with ghostly peppers (hover to see!)
+        </div>
+
+        <div class="menu-item">
+            <strong>The Vanishing Veggie</strong>
+            <span class="price">$9.99</span>
+            <br>Completely invisible vegetables that definitely exist
+        </div>
+
+        <div class="warning">
+            Warning: All sandwiches are 100% invisible. We are not responsible for customers who claim they "can't see" their food.
+        </div>
+    </div>
+</body>
+
+</html>
